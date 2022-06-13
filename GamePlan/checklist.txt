@@ -1,0 +1,70 @@
+///CHECKLIST OVERVIEW///
+
+Remember: you do not have to include every single item! 14 is the minimum.
+
+The required items are starred.
+
+//PLANNING//
+
+-Project includes a wireframe for each view
+
+-Project includes a list of MVP features *
+
+-Project includes a data model
+
+//MVP//
+
+-App has at least 3 main features *
+
+-Front end makes a request to the server and handles the response *
+
+-Front end is interactive *
+
+-App has custom styling *
+
+//FRONT END//
+
+-App has at least 5 semantic tags *
+
+-App includes 1 view *
+
+-App includes 1+ additional view(s)
+
+-Styling includes flexbox
+
+-At least 1 view is responsive
+
+-Styling includes animations
+
+//SERVER//
+
+-App includes a GET endpoint and handler function *
+
+-App includes a POST endpoint and handler function *
+
+-App includes a PUT endpoint and handler function
+
+-App includes a DELETE endpoint and handler function
+
+-App utilizes Sequelize
+
+-Project includes at least 1 controller file
+
+//DATABASE//
+
+-Project includes a seed file or function
+
+-App uses 1 table
+
+-App uses 1+ additional tables
+
+-App uses a foreign key and join
+
+//PRESENTATION//
+
+-Discusses project purpose and demonstrates MVP *
+
+-Does not discuss broken/unimplemented features
+
+-Recording is between 2-3 minutes
+

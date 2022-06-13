@@ -1,0 +1,12 @@
+header {
+    display: flex;
+    flex-direction: row;
+    font-size: 2em;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#ramen-man {
+    width: 12vw;
+    height: 20vh;
+}

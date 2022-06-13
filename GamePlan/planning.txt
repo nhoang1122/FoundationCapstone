@@ -1,0 +1,29 @@
+Project Name : Ghetto Gourmet (work in progress LOL)
+
+Project Idea/Summary :  An application where you can find all sorts of different recipes ranging from different cuisines. 
+
+//MVPS// 
+
+You will be able to BROWSE the whole recipe database (Maybe I will Separate by Cuisines. I am imagining Netflix and how they are separated by Movie/Show Categories.)
+
+You will be able to SEARCH for a recipe. I will have a search bar and depending on what is typed in, it will pull the recipe card for you. 
+
+You will be able to STORE recipes (Whether it is something you plan to cook or a recipe that you may have used).
+
+You will be able to RATE the Recipes by STARS (1-5 with 5 being the highest).
+
+There will be a DARK MODE vs LIGHT MODE.
+
+There will be a randomizer button that will shoot out a random recipe for when you are uninspired. 
+
+//CODING//
+    
+Will need AXIOS for Get, Post, and Put functions
+
+Will need a Controller File to make Code Clean
+
+Might make a db.json file to store my recipes since I don’t want to use an API
+
+Or, I may do a seed function to create the tables. 
+
+HTML, CSS, JS will all be used. 
