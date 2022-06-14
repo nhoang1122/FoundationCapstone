@@ -1,0 +1,131 @@
+[
+    {
+        "id":1,
+        "name":"Pan-Seared Steak",
+        "type":"Meat",
+        "ingredients":["Rib-Eye","Salt, Pepper, Garlic Powder","Unsalted Butter","Thyme or Rosemary","Handful of Garlic"],
+        "procedure":{
+            "StepOne":"Pat steaks dry and Season generously.",
+            "StepTwo":"Pre-Heat a skillet over HIGH heat. Add Canola Oil and heat until extremely hot.",
+            "StepThree":"Place Steaks on pan and sear for 3 minutes. DO NOT TOUCH. Flip and Sear for another 2-3 minutes. We want a deep brown crust.",
+            "StepFour":"Lower the heat! Add the butter, thyme or rosemary, and the garlic. BUTTER BASTE!",
+            "StepFive":"Use a thermometer to take the steaks off at 135F. SERVE!"
+        },
+        "rating":5
+    },
+    {
+        "id":2,
+        "name":"Fried Chicken",
+        "type":"Meat",
+        "ingredients":["Chicken Thighs & Drumsticks","Lawry's Seasoning Salt, Garlic Powder, Cayenne Pepper","All-Purpose Flour"],
+        "procedure":{
+            "StepOne": "Brine the Chicken! In a large mixing bowl, combine 10 cups of water, seasoning salt, garlic powder, and cayenne. Add chicken and refigerate for at least 4 Hours",
+            "StepTwo":"Fill up a pot with 6 inches of oil and heat over Medium-High Heat. 365-380F.",
+            "StepThree":"In a large mixing bowl, combine flour,seasoning salt, cayenne, and garlic powder. Remove chicken from brine and toss them in the flour mixture a few at a time.",
+            "StepFour":"Once the oil is ready, drop in the coated chicken ONE AT A TIME. Drumsticks for 14 minutes and Thighs for 16 minutes. SERVE!"
+        },
+        "rating":4
+    },
+    {
+        "id":3,
+        "name":"Cacio E Pepe",
+        "type":"Pasta",
+        "ingredients":["Spaghetti Pasta","Black Pepper","Grated Parmigiano-Reggiano Cheese","Grated Pecorino Romano Cheese"],
+        "procedure":{
+            "StepOne":"Cook pasta al dente, around 7 minutes. Save 1 cup of Pasta Water.",
+            "StepTwo":"In a saucepan, heat olive oil under medium heat. Once hot, toast the Black Pepper.",
+            "StepThree":"Add One Cup of Pasta Water and let it simmer. Add the Spaghetti. MIX.",
+            "StepFour":"Add Both the Cheeses and MIX MIX MIX. SERVE!"
+        },
+        "rating":3
+    },
+    {
+        "id":4,
+        "name":"Carbonara",
+        "type":"Pasta",
+        "ingredients":["Spaghetti Pasta","Pancetta or Bacon","5-6 Egg Yolks","Grated Parmigiano-Reggiano Cheese","Grated Pecorino Romano Cheese"],
+        "procedure":{
+            "StepOne":"Cook pasta al dente, around 7 minutes. Save 1 cup of Pasta Water.",
+            "StepTwo":"In a skillet, add Diced Pancetta or Bacon. Cook on medium heat until fat renders out and meat is browned and crispy. Remove from heat.",
+            "StepThree":"Add Pasta to Pan and MIX MIX MIX.",
+            "StepFour":"Add Egg Yolks and Both Cheeses. TOSS TOSS TOSS. SERVE!"
+        },
+        "rating":3
+    },
+    {
+        "id":5,
+        "name":"Smash Burger",
+        "type":"Sandwich",
+        "ingredients":["Ground Beef","Cheese","Butter","Burger Buns"],
+        "procedure":{
+            "StepOne":"Portion the Ground Beef into even balls and head a large skillet over Medium-High Heat.",
+            "StepTwo":"Place Ground Beef Balls in the skillet and SMASH them with a spatula to form flat patties. (1/2 inch thick)",
+            "StepThree":"Season top of patties to taste with seasonsings of choice. Sear Patties until there is a nice crust. (3-4 Minutes.) FLIP & REPEAT.",
+            "StepFour":"Add Two slices of cheese on top of each patty and let it melt.",
+            "StepFive":"Spread the butter over the Burger Buns and toast on a pan!",
+            "StepSix":"Assemble the Burgers! SERVE!"
+        },
+        "rating":5
+    },
+    {
+        "id":6,
+        "name":"Grilled Cheese",
+        "type":"Sandwich",
+        "ingredients":["Sandwich Bread","Four Slices of Cheese","Butter"],
+        "procedure":{
+            "StepOne":"Place Cheese on Bread and Close!",
+            "StepTwo":"Butter the outside of the bread.",
+            "StepThree":"Place sandwich on a cold pan over medium heat! Cook until bottom is golden brown! (2 to 4 minutes) FLIP!",
+            "StepFour":"Toast the other side until it is golden brown and the cheese fully melts. SERVE!"
+        },
+        "rating":4
+    },
+    {
+        "id":7,
+        "name":"Pan-Seared Crispy Skin Fish",
+        "type":"Seafood",
+        "ingredients":["Filets of Skin on Fish","Butter","Seasonings of Choice"],
+        "procedure":{
+            "StepOne":"Dry the Filets and Season! Pre-Heat a Pan over High Heat.",
+            "StepTwo":"Oil the Pan and Place Filets SKIN SIDE DOWN. If skin starts to curl, push filet down with a spatula.",
+            "StepThree":"Sear the fish until skin crispy and fish 50% cooked, 2 to 3 minutes. FLIP!",
+            "StepFive":"Add the butter and butter baste! SERVE!!"
+        },
+        "rating":4
+    },
+    {
+        "id":8,
+        "name":"Lobster Rolls",
+        "type":"Seafood",
+        "ingredients":["Steamed Lobster","Mayonnaise","Zest and Juice of 1 Lemon","Chopped Chives and Dill","Hot Dog Buns","Butter"],
+        "procedure":{
+            "StepOne":"Remove meat from Steamed Lobster and Cut into Bite-Sized Chunks.",
+            "StepTwo":"In a Medium Bowl, mix mayonnaise, lemon zest & juice, chives, dill, and salt&pepper to taste. Add Lobster Chunks to mayo mixture.",
+            "StepThree":"Butter Buns and Toast! Stuff Buns with Lobster Mixture and SERVE!"
+        },
+        "rating":3
+    },
+    {
+        "id":9,
+        "name":"Avocado Toast",
+        "type":"Breakfast",
+        "ingredients":["Avocado","Lime","Red Onion","Cilantro","Sandwich Bread"],
+        "procedure":{
+            "StepOne":"Mash Avocado and Season to taste! Add Diced Red Onion and Chopped Cilantro.",
+            "StepTwo":"Toast the Bread and Spread the Avocado Mixture!",
+            "StepThree":"OPTIONAL! Fry up an Egg Over-Easy or Sunny-Side Up and top it off!"
+        },
+        "rating":4
+    },
+    {
+        "id":10,
+        "name": "Overnight Oats",
+        "type":"Breakfast",
+        "ingredients":["Steel-Cut Oats","Greek Yogurt","Chia Seeds","Vanilla Extract","Cinnamon","Banana","Oatmilk","Honey"],
+        "procedure":{
+            "StepOne":"In a mixing bowl, MASH the banana. Add the rest of the ingredients and mix!",
+            "StepTwo":"Transfer and Split into Mason Jars! Ready to serve! I like to add fresh fruit (Berries or Banana) or some Granola!"
+        },
+        "rating":4
+    }
+]
