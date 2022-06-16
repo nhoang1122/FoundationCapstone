@@ -6,6 +6,7 @@ const pastaContainer = document.querySelector('#pasta')
 const container = document.querySelector('#container')
 const userContainer = document.querySelector('#user-container')
 const profileContainer = document.querySelector('#profile-container')
+const form = document.querySelector('form')
 
 const baseURL = `http://localhost:9000/api/recipe`;
 const userUrl = `http://localhost:9000/api/user`;
@@ -22,6 +23,15 @@ const getAllRecipes = () => {
 const getAllUsers = () => {
     axios
     .get(userUrl)
+    .then(({data:user}) => displayUserCard(user))
+    .catch((err) => {
+        console.log(err.response.data)
+    })
+}
+
+const createUserPost = body => {
+    axios
+    .post(userUrl, body)
     .then(({data:user}) => displayUserCard(user))
     .catch((err) => {
         console.log(err.response.data)
@@ -46,13 +56,36 @@ const deleteRecipe = id => {
     })
 }
 
-const updateRecipe = (id,type) => {
+const updateUserLikes = (id,type) => {
     axios
-    .put(`${baseURL}/${id}`,{type})
-    .then(({data:recipe}) => displayRecipes(recipe))
+    .put(`${userUrl}/${id}`,{type})
+    .then(({data:user}) => displayUserCard(user))
     .catch((err) => {
         console.log(err.response.data)
     })
+}
+
+const submitHandler = (e) => {
+    e.preventDefault()
+
+    let dishName = document.querySelector('#dish-name');
+    let userName = document.querySelector('#your-name');
+    let category = document.querySelector('#cat');
+    let userImg = document.querySelector('#dish-pic');
+
+    let bodyObj = {
+        dishName: dishName.value,
+        userName: userName.value,
+        category: category.value,
+        userImg: userImg.value
+    }
+
+    createUserPost(bodyObj)
+
+    dishName.value=''
+    userName.value=''
+    category.value=''
+    userImg.value=''
 }
 
 const createRecipeCard = (recipe) => {
@@ -62,27 +95,40 @@ const createRecipeCard = (recipe) => {
     recipeCard.innerHTML = `<img src=${recipe.imageURL} class="recipe-cover"/>
     <p class="recipe-name">${recipe.name}</p>
     <p class="recipe-type">Category : ${recipe.type}</p>
-    <div class="btns-container">
-        <button onclick="updateRecipe(${recipe.id},'minus')">-</button>
-        <p class="recipe-rating">${recipe.rating} STARS</p>
-        <button onclick="updateRecipe(${recipe.id}, 'plus')">+</button>
-    </div>
-    <button onclick="deleteRecipe(${recipe.id})">DELETE</button>
-    <button id="add">ADD TO LIST</button>
-    `
+  
 
+    <button type="button" class="btn-read"  data-bs-toggle="modal" data-bs-target="#exampleModal">Read More</button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Recipe</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            ${recipe.name}
+            <pre>
+            </pre>
+
+            Ingredients : ${recipe.ingredients}
+
+            <pre>
+            </pre>
+
+            Instructions : ${recipe.procedure}
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    
+    <button class="btn-read">ADD TO LIST</button>
+    `
     container.appendChild(recipeCard)
-    // if(recipe.type === "Meat") {
-    //     meatContainer.appendChild(recipeCard)
-    // } else if(recipe.type === "Pasta") {
-    //     pastaContainer.appendChild(recipeCard) 
-    // } else if(recipe.type === "Sandwich") {
-    //     sandwichContainer.appendChild(recipeCard) 
-    // } else if(recipe.type === "Seafood") {
-    //     seafoodContainer.appendChild(recipeCard) 
-    // } else if(recipe.type === "Breakfast") {
-    //     breakfastContainer.appendChild(recipeCard)
-    // }
 }
 
 const displayRecipes = (arr) => {
@@ -102,6 +148,11 @@ const createUserCard = (user) => {
     <p class="user-dish">${user.dishName}</p>
     <p class="user-cat">Category : ${user.category}</p>
     <p class="user-title">By : ${user.userName}</p>
+    <div class="like-container">
+        <button class="btn-like" onclick="updateUserLikes(${user.id},'minus')">-</button>
+        <p class="">${user.likes} LIKES</p>
+        <button class="btn-like" onclick="updateUserLikes(${user.id}, 'plus')">+</button>
+    </div>
     `
     userContainer.appendChild(userCard);
 }
@@ -113,6 +164,12 @@ const displayUserCard = (arr) => {
     }
 }
 
+form.addEventListener('submit', submitHandler)
 
 getAllRecipes()
 getAllUsers()
+
+
+
+
+{/* <button onclick="deleteRecipe(${recipe.id})">DELETE</button> */}

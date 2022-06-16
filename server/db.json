@@ -12,7 +12,8 @@
             "StepFour":"Lower the heat! Add the butter, thyme or rosemary, and the garlic. BUTTER BASTE!",
             "StepFive":"Use a thermometer to take the steaks off at 135F. SERVE!"
         },
-        "rating":5
+        "rating":5,
+        "htmlFile":"./panSearedSteak.html"
     },
     {
         "id":2,
@@ -26,7 +27,8 @@
             "StepThree":"In a large mixing bowl, combine flour,seasoning salt, cayenne, and garlic powder. Remove chicken from brine and toss them in the flour mixture a few at a time.",
             "StepFour":"Once the oil is ready, drop in the coated chicken ONE AT A TIME. Drumsticks for 14 minutes and Thighs for 16 minutes. SERVE!"
         },
-        "rating":4
+        "rating":4,
+        "htmlFile":"./friedChicken.html"
     },
     {
         "id":3,
@@ -40,7 +42,8 @@
             "StepThree":"Add One Cup of Pasta Water and let it simmer. Add the Spaghetti. MIX.",
             "StepFour":"Add Both the Cheeses and MIX MIX MIX. SERVE!"
         },
-        "rating":3
+        "rating":3,
+        "htmlFile":"./cacioEpepe.html"
     },
     {
         "id":4,
@@ -54,7 +57,8 @@
             "StepThree":"Add Pasta to Pan and MIX MIX MIX.",
             "StepFour":"Add Egg Yolks and Both Cheeses. TOSS TOSS TOSS. SERVE!"
         },
-        "rating":3
+        "rating":3,
+        "htmlFile":"./carbonara.html"
     },
     {
         "id":5,
@@ -70,7 +74,8 @@
             "StepFive":"Spread the butter over the Burger Buns and toast on a pan!",
             "StepSix":"Assemble the Burgers! SERVE!"
         },
-        "rating":5
+        "rating":5,
+        "htmlFile":"./burger.html"
     },
     {
         "id":6,
@@ -84,7 +89,8 @@
             "StepThree":"Place sandwich on a cold pan over medium heat! Cook until bottom is golden brown! (2 to 4 minutes) FLIP!",
             "StepFour":"Toast the other side until it is golden brown and the cheese fully melts. SERVE!"
         },
-        "rating":4
+        "rating":4,
+        "htmlFile":"./grilledCheese.html"
     },
     {
         "id":7,
@@ -98,7 +104,8 @@
             "StepThree":"Sear the fish until skin crispy and fish 50% cooked, 2 to 3 minutes. FLIP!",
             "StepFive":"Add the butter and butter baste! SERVE!!"
         },
-        "rating":4
+        "rating":4,
+        "htmlFile":"./fish.html"
     },
     {
         "id":8,
@@ -111,7 +118,8 @@
             "StepTwo":"In a Medium Bowl, mix mayonnaise, lemon zest & juice, chives, dill, and salt&pepper to taste. Add Lobster Chunks to mayo mixture.",
             "StepThree":"Butter Buns and Toast! Stuff Buns with Lobster Mixture and SERVE!"
         },
-        "rating":3
+        "rating":3,
+        "htmlFile":"./lobster.html"
     },
     {
         "id":9,
@@ -124,7 +132,8 @@
             "StepTwo":"Toast the Bread and Spread the Avocado Mixture!",
             "StepThree":"OPTIONAL! Fry up an Egg Over-Easy or Sunny-Side Up and top it off!"
         },
-        "rating":4
+        "rating":4,
+        "htmlFile":"./avocadoToast.html"
     },
     {
         "id":10,
@@ -136,6 +145,7 @@
             "StepOne":"In a mixing bowl, MASH the banana. Add the rest of the ingredients and mix!",
             "StepTwo":"Transfer and Split into Mason Jars! Ready to serve! I like to add fresh fruit (Berries or Banana) or some Granola!"
         },
-        "rating":4
+        "rating":4,
+        "htmlFile":"./oats.html"
     }
 ]

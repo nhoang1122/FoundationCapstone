@@ -14,8 +14,9 @@ app.use(cors())
 
 app.get("/api/recipe", controllerFile.getRecipes);
 app.delete("/api/recipe/:id", controllerFile.deleteRecipe);
-app.put("/api/recipe/:id", controllerFile.updateRecipe);
 
-app.get("/api/user", userControllerFile.getUser)
+app.get("/api/user", userControllerFile.getUser);
+app.post("/api/user", userControllerFile.createUserPost);
+app.put("/api/user/:id", userControllerFile.updateUserLikes);
 
 app.listen(SERVER_PORT, () => console.log(`It's OVER ${SERVER_PORT}`))
