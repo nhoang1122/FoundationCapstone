@@ -6,28 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
     <title>HOME - GOURMET</title>
 </head>
 <body>
+  
+    <nav>
+        <a href="./index.html">HOME</a>
+        <a href="./profile.html">PROFILE</a>
+    </nav>
+
     <header>
         <img id="ramen-man"src="/public/images/Ramen.png">
         <h1>ghetto gourmet</h1>
         <img id="ramen-man"src="/public/images/Ramen.png">
-        <form>
+        <form id="search-bar">
             <input type="text" placeholder="Search">
-            <button>GO</button>
+            <button id="go">GO</button>
         </form>
     </header>
-
+    
     <section id="container"></section>
-    <!-- <main>
-        <ul id="breakfast"></ul>
-        <ul id="sandwiches"></ul>
-        <ul id="seafood"></ul>
-        <ul id="meat"></ul>
-        <ul id="pasta"></ul> 
-    </main> -->
+   
+    <div #id="user-section">
+        <form id="user-entry">
+            <h3>SHARE YOUR DISH</h3>
+            <input type="text" id="dish-name" placeholder="Name of Dish">
+            <select id="cat">
+                <option value="Select">Select Category</option>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Meat">Meat</option>
+                <option value="Pasta">Pasta</option>
+                <option value="Sandwich">Sandwich</option>
+                <option value="Seafood">Seafood</option>
+            </select>
+            <input type="text" id="dish-pic" placeholder="Picture of Dish">
+            <button id="dish-post">POST</button>
+        </form>
+
+        <section id="user-container"></section>
+        
+    </div>
+
+    
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
 </body>
+
+
 </html>
