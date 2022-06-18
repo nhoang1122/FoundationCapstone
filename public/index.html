@@ -16,7 +16,7 @@
   
     <nav>
         <a href="./index.html">HOME</a>
-        <a href="./profile.html">PROFILE</a>
+        <a href="./profile.html">ABOUT ME</a>
     </nav>
 
     <header>
@@ -27,22 +27,31 @@
     
     <section id="container"></section>
    
+    <form id="user-entry">
+        <h3>SHARE YOUR DISH</h3>
+        <input type="text" id="dish-name" class="form-class" placeholder="Name of Dish">
+        <input type="text" id="your-name" class="form-class" placeholder="Your Name">
+        <select id="cat">
+            <option value="Select">Select Category</option>
+            <option value="Breakfast">Breakfast</option>
+            <option value="Meat">Meat</option>
+            <option value="Italian">Italian</option>
+            <option value="Sandwich">Sandwich</option>
+            <option value="Seafood">Seafood</option>
+            <option value="Sauce">Sauce</option>
+            <option value="Soup">Soup</option>
+            <option value="Side">Side</option>
+            <option value="Dessert">Dessert</option>
+            <option value="Mexican">Mexican</option>
+            <option value="Asian">Asian</option>
+        </select>
+        <input type="text" id="dish-pic" placeholder="Picture of Dish">
+        <button class="btn-read">POST</button>
+    </form>
+
+
     <div #id="user-section">
-        <form id="user-entry">
-            <h3>SHARE YOUR DISH</h3>
-            <input type="text" id="dish-name" class="form-class" placeholder="Name of Dish">
-            <input type="text" id="your-name" class="form-class" placeholder="Your Name">
-            <select id="cat">
-                <option value="Select">Select Category</option>
-                <option value="Breakfast">Breakfast</option>
-                <option value="Meat">Meat</option>
-                <option value="Pasta">Pasta</option>
-                <option value="Sandwich">Sandwich</option>
-                <option value="Seafood">Seafood</option>
-            </select>
-            <input type="text" id="dish-pic" placeholder="Picture of Dish">
-            <button class="btn-read">POST</button>
-        </form>
+      
 
         <section id="user-container"></section>
         

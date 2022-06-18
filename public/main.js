@@ -89,44 +89,42 @@ const submitHandler = (e) => {
 }
 
 const createRecipeCard = (recipe) => {
+
+    let title = recipe.name;
+
     const recipeCard = document.createElement('div')
     recipeCard.classList.add('recipe-card')
 
     recipeCard.innerHTML = `<img src=${recipe.imageURL} class="recipe-cover"/>
     <p class="recipe-name">${recipe.name}</p>
     <p class="recipe-type">Category : ${recipe.type}</p>
-  
-
     <button type="button" class="btn-read"  data-bs-toggle="modal" data-bs-target="#exampleModal">Read More</button>
-
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Recipe</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Join Our Subscription!</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            ${recipe.name}
+            Would you like to learn how to make this recipe?
             <pre>
             </pre>
 
-            Ingredients : ${recipe.ingredients}
+            Subscribe for a low price of $12.99/month!
 
             <pre>
             </pre>
 
-            Instructions : ${recipe.procedure}
         </div>
         <div class="modal-footer">
+            <a id="join-btn" href="./join.html">JOIN</a>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
         </div>
     </div>
     </div>
-
-    
-    <button class="btn-read">ADD TO LIST</button>
+    <button class="btn-read" onclick="deleteRecipe(${recipe.id})">NOT INTERESTED</button>
     `
     container.appendChild(recipeCard)
 }
