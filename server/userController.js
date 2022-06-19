@@ -1,6 +1,6 @@
 const user = require('./user.json')
 
-let globalId = 7;
+let globalId = 8;
 
 module.exports = {
   getUser: (req,res) => {
