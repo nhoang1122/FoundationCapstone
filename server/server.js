@@ -25,5 +25,5 @@ app.get('/', (req,res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'))
 })
 
-const port = process.env.SERVER_PORT || 9000
-app.listen(SERVER_PORT, () => console.log(`It's OVER ${SERVER_PORT}`))
+const port = process.env.PORT || 9000
+app.listen(port, () => console.log(`It's OVER ${port}`))
