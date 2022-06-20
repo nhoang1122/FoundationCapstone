@@ -8,8 +8,11 @@ const userContainer = document.querySelector('#user-container')
 const profileContainer = document.querySelector('#profile-container')
 const form = document.querySelector('form')
 
-const baseURL = `http://localhost:9000/api/recipe`;
-const userUrl = `http://localhost:9000/api/user`;
+// const baseURL = `http://localhost:9000/api/recipe`;
+// const userUrl = `http://localhost:9000/api/user`;
+
+const baseURL = `/api/recipe`;
+const userUrl = `/api/user`;
 
 const getAllRecipes = () => {
     axios
