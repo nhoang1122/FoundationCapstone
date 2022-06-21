@@ -28,9 +28,7 @@ module.exports = {
     
     let index = user.findIndex(elem => Number(elem.id) === Number(id))
     
-    if (user[index].likes === 5 && type === 'plus') {
-      res.status(400).send('cannot go above 5')
-    } else if (user[index].likes === 0 && type === 'minus') {
+    if (user[index].likes === 0 && type === 'minus') {
       res.status(400).send('cannot go below 0')
     } else if (type === 'plus') {
       user[index].likes++
