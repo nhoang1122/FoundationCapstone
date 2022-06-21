@@ -1,10 +1,12 @@
 
 
 body {
-    background-color: #588157;
+    /* background-color: #588157; */
+    background-image: url("./images/FoodBackground10.jpg");
     display: flex;
     flex-direction: column;
     align-items: center;
+   
 }
 
 header {
@@ -20,7 +22,7 @@ header {
 }
 
 nav {
-	border-bottom: 2px solid #E4DFDA;
+	border-bottom: 2px solid white;
     width: 80vw;
     display: flex;
     flex-direction: row;
@@ -40,7 +42,7 @@ h2 {
     color: white;
     font-size: 4rem;
     font-family: 'Noto Sans KR', sans-serif;
-    border-bottom: 2px solid #E4DFDA;
+    border-bottom: 2px solid white;
 }
 
 #share {
@@ -91,8 +93,7 @@ h2 {
 
 .recipe-card {
     font-family: 'Noto Sans KR', sans-serif;
-    background-color: #E4DFDA;
-    border: 1px solid #588157;
+    background-color: white;
     width: 250px;
     height: 400px;
     margin: 2%;
@@ -105,7 +106,7 @@ h2 {
 
 .user-card {
     font-family: 'Noto Sans KR', sans-serif;
-    background-color: #E4DFDA;
+    background-color: white;
     width: 250px;
     height: 350px;
     margin: 2%;
@@ -176,14 +177,14 @@ h2 {
 
 .btn-like {
     font-family: 'Noto Sans KR', sans-serif;
-    background-color: #A1674A;
+    background-color: #9AD2CB;
     color: white;
     border-radius: 50%;
 }
 
 .btn-read {
     font-family: 'Noto Sans KR', sans-serif;
-    background-color: #A1674A;
+    background-color: #9AD2CB;
     color: white;
     border-radius: 10%;
     margin: 2%;
@@ -252,13 +253,14 @@ h2 {
 
 #go {
     font-family: 'Noto Sans KR', sans-serif;
-    background-color: #A1674A;
+    background-color: #9AD2CB;
     color: white;
     width: 60px;
 }
 
 a {
-    color: #E4DFDA;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 #user-section {
@@ -280,7 +282,7 @@ a {
 }
 
 #join-btn {
-    color: #A1674A;
+    color: #9AD2CB;
 }
 
 
@@ -295,9 +297,15 @@ a {
 }
 
 #text {
-    width: 500px;
+    width: 560px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: white;
+    color: black;
 }
 
 .about-me {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
 }

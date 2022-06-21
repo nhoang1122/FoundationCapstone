@@ -3,17 +3,25 @@ body {
     height: 300vh;
 }
 
+a {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
+    height: 100px;
+
 }
 
 #btn-join {
     font-family: 'Noto Sans KR', sans-serif;
-    background-color: #A1674A;
+    background-color: #9AD2CB;
     color: white;
     width: 100px;
+    margin: 2%;
 }
 
 .long-input {
