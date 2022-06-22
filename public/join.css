@@ -28,3 +28,7 @@ form {
     width: 300px;
     margin: 1%;
 }
+
+#catchphrase {
+    font-family: 'Parisienne', cursive;
+}

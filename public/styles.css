@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: center;
    
 }
 
@@ -308,4 +309,8 @@ a {
 
 .about-me {
     border-bottom: 1px solid black;
+}
+
+#catchphrase {
+    font-family: 'Parisienne', cursive;
 }
