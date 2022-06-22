@@ -1,8 +1,4 @@
-const sandwichContainer = document.querySelector('#sandwiches')
-const seafoodContainer = document.querySelector('#seafood')
-const meatContainer = document.querySelector('#meat')
-const breakfastContainer = document.querySelector('#breakfast')
-const pastaContainer = document.querySelector('#pasta')
+
 const container = document.querySelector('#container')
 const userContainer = document.querySelector('#user-container')
 const profileContainer = document.querySelector('#profile-container')
@@ -170,7 +166,3 @@ form.addEventListener('submit', submitHandler)
 getAllRecipes()
 getAllUsers()
 
-
-
-
-{/* <button onclick="deleteRecipe(${recipe.id})">DELETE</button> */}
