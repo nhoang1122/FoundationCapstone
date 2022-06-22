@@ -1,8 +1,8 @@
 
 
 body {
-    /* background-color: #588157; */
-    background-image: url("./images/FoodBackground10.jpg");
+    background-color: #588157;
+    /* background-image: url("./images/FoodBackground10.jpg"); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,14 +179,14 @@ h2 {
 
 .btn-like {
     font-family: 'Noto Sans KR', sans-serif;
-    background-color: #9AD2CB;
+    background-color: #A1674A;
     color: white;
     border-radius: 50%;
 }
 
 .btn-read {
     font-family: 'Noto Sans KR', sans-serif;
-    background-color: #9AD2CB;
+    background-color: #A1674A;
     color: white;
     border-radius: 10%;
     margin: 2%;
@@ -255,7 +255,7 @@ h2 {
 
 #go {
     font-family: 'Noto Sans KR', sans-serif;
-    background-color: #9AD2CB;
+    background-color: #A1674A;
     color: white;
     width: 60px;
 }
