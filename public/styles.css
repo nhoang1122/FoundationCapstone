@@ -34,8 +34,9 @@ nav {
 
 h1 {
     color: white;
-    font-size: 4rem;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 5rem;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    font-family: 'Parisienne', cursive;
     font-weight: bold;
 }
 
